@@ -23,12 +23,14 @@ app.get("/vimal", (req, res) => {
   });
 });
 
-app.get("/workflow", (req, res) => {
+app.get("/event", (req, res) => {
   res.json({
     success: true,
-    message: "hello world the devops trigger successfully worked",
+    message: "vimal response changed",
   });
 });
+
+
 
 // ✅ Docker + Render safe
 app.listen(PORT, "0.0.0.0", () => {
